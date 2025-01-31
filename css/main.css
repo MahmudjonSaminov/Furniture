@@ -1,0 +1,404 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Inter", serif;
+}
+
+.spec {
+  background-color: black;
+  border-radius: 15px;
+  border: none;
+  color: white;
+  padding: 12px 40px;
+  transition: all 0.3s ease;
+}
+.spec:hover {
+  background-color: white;
+  color: black;
+  border: 1px solid;
+  cursor: pointer;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+ul a {
+  text-decoration: none;
+  color: gray;
+  position: relative;
+  padding-bottom: 5px;
+  transition: all 0.3s ease;
+}
+ul a:hover {
+  color: white;
+}
+ul a::after {
+  transition: all 0.3s ease;
+  position: absolute;
+  content: "";
+  width: 0px;
+  height: 5px;
+  background-color: yellow;
+  bottom: 0px;
+  left: 0px;
+}
+
+ul a:hover::after {
+  width: 100%;
+  color: white;
+}
+
+header {
+  background-color: #35736E;
+  color: white;
+}
+header nav {
+  padding: 25px 0px;
+}
+header nav .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav .container .span:hover svg path {
+  stroke: blue;
+}
+header nav .container span:hover svg path {
+  stroke: blue;
+  cursor: pointer;
+}
+header nav .container .contact {
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+header .hero .container {
+  display: flex;
+  align-items: center;
+}
+header .hero .hero_info {
+  width: 400px;
+}
+header .hero .hero_info .h_1 {
+  font-size: 50px;
+  margin-bottom: 100px;
+}
+header .hero .hero_info .btn {
+  transition: all 0.3s ease;
+  padding: 10px 25px;
+  border-radius: 10px;
+  background-color: #35736E;
+  border: 1px solid white;
+  color: white;
+}
+header .hero .hero_info .btn:hover {
+  background-color: #F9BF29;
+  color: black;
+  transform: scale(1.4);
+  cursor: pointer;
+}
+
+.one {
+  padding: 100px;
+}
+.one .container {
+  display: flex;
+  align-items: center;
+}
+.one .one_info {
+  width: 200px;
+}
+.one .one_info h1 {
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+.one .one_info p {
+  margin-bottom: 15px;
+}
+.one .cards {
+  display: flex;
+  gap: 50px;
+}
+.one .cards .card {
+  position: relative;
+  transition: all 0.3s ease;
+  width: 270px;
+  height: 390px;
+  text-align: center;
+  position: relative;
+}
+.one .cards .card b {
+  margin-bottom: 50px;
+}
+.one .cards .card .legs {
+  width: 100%;
+  height: 300px;
+  transition: all 0.3s ease;
+}
+.one .cards .card .spen {
+  display: none !important;
+  bottom: -30px;
+  right: 40%;
+  margin: 0 auto !important;
+  position: absolute;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  border: 1px solid;
+  background-color: black;
+}
+.one .cards .card:hover {
+  background-color: rgba(53, 115, 110, 0.1019607843);
+  transform: scale(1.2);
+}
+.one .cards .card:hover .spen {
+  display: block !important;
+  display: flex !important;
+}
+
+.title {
+  margin-bottom: 20px;
+  font-size: 40px;
+}
+
+.two {
+  margin-top: 100px;
+}
+.two .dis_block {
+  display: flex;
+  align-items: center;
+}
+.two .two_info {
+  width: 500px;
+}
+.two .two_info .title {
+  margin-bottom: 20px;
+  font-size: 40px;
+}
+.two .two_info p {
+  font-size: 15px;
+}
+.two .block {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+.two .block .box {
+  width: 250px;
+  transition: all 0.3s ease;
+}
+.two .block .box img, .two .block .box h2 {
+  margin-bottom: 10px;
+}
+.two .block .box:hover {
+  background-color: #35736E;
+  transform: scale(1.2);
+  padding: 0px 10px;
+  color: white;
+}
+
+.thr {
+  margin-top: 100px;
+}
+.thr p {
+  color: gray;
+  margin-bottom: 20px;
+}
+.thr .container {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+.thr .container img {
+  width: 720px;
+}
+.thr .letter {
+  display: flex;
+  flex-wrap: wrap;
+}
+.thr .letter .let {
+  transition: all 0.3s ease;
+  padding: 10px 0px;
+  display: flex;
+  gap: 10px;
+  width: 215px;
+}
+.thr .letter .let img {
+  width: 10px;
+  height: 10px;
+}
+.thr .letter .let .thr_img {
+  padding: 2px 0px;
+}
+.thr .letter .let:hover {
+  border-radius: 15px;
+  cursor: default;
+  color: white !important;
+  background-color: yellow;
+}
+
+section {
+  margin: 100px 0px !important;
+}
+
+.four .pacman {
+  display: flex;
+  justify-content: center;
+  gap: 45px;
+}
+.four .pacman .pac {
+  width: 350px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  transition: all 0.3s ease;
+}
+.four .pacman .pac h2, .four .pacman .pac p, .four .pacman .pac b {
+  margin-bottom: 10px;
+}
+.four .pacman .pac:hover {
+  background-color: #35736E;
+  color: white;
+}
+
+.five {
+  text-align: center;
+}
+.five .text {
+  width: 670px;
+  margin: 0 auto;
+}
+.five .text h1, .five .text p {
+  margin-bottom: 20px;
+}
+.five .text img, .five .text h3, .five .text p {
+  margin-bottom: 10px;
+}
+
+.six .dis_info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.six .dis_info .p {
+  color: black;
+  position: relative;
+}
+.six .dis_info .p:hover {
+  border-bottom: 3px solid;
+  color: blue;
+}
+.six .kegeg {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  justify-content: center;
+}
+.six .kegeg .kage {
+  margin-top: 35px;
+  width: 400px;
+  transition: all 0.3s ease;
+}
+.six .kegeg .kage:hover {
+  color: white;
+  background-color: #35736E;
+  transform: scale(1.2);
+}
+.six .kegeg .kage img {
+  margin-bottom: 20px;
+  width: 100%;
+  border-radius: 10px;
+}
+
+footer {
+  margin-top: 190px;
+  padding: 60px 0px;
+  background-color: whitesmoke;
+  color: black;
+}
+footer .mail {
+  display: flex;
+  margin-bottom: 25px;
+  gap: 20px;
+}
+footer h1 {
+  margin-bottom: 20px;
+}
+footer p {
+  color: gray;
+}
+footer .first {
+  position: relative !important;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 100px;
+}
+footer .inputs {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+footer .inputs input {
+  padding: 13px 35px;
+  color: gray;
+  outline: none;
+  border-radius: 10px;
+}
+footer .lest img {
+  bottom: -90px;
+  right: 0px;
+  position: absolute;
+}
+footer .second .display {
+  display: flex;
+  justify-content: space-between;
+  gap: 35px;
+}
+footer .second .display h5 {
+  margin-bottom: 10px;
+  color: gray;
+  transition: all 0.3s ease;
+}
+footer .second .display h5:hover {
+  color: green;
+  cursor: pointer;
+  transform: scale(1.2);
+}
+footer .second .dis1 {
+  width: 415px;
+}
+footer .social {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+footer .flex {
+  display: flex;
+  justify-content: space-between;
+  color: gray;
+}
+footer .flex .last {
+  display: flex;
+}
+footer hr {
+  margin: 35px 0px;
+}/*# sourceMappingURL=main.css.map */
