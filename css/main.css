@@ -407,17 +407,77 @@ footer hr {
 }
 
 @media (max-width: 456px) {
+  section {
+    margin: 50p 0px !important;
+  }
   .container {
     padding-left: 10px !important;
     padding-right: 10px !important;
   }
-  header nav ul span {
+  header {
+    margin-bottom: 10px;
+  }
+  header nav ul a {
     display: none !important;
+  }
+  header nav span {
+    display: none;
   }
   header nav .bars {
     display: block;
+    font-size: 30px;
   }
-  .hero img {
-    display: none !important;
+  .hero .container {
+    margin-top: 50px;
+    flex-direction: column;
   }
+  .hero .container h1 {
+    font-size: 20px;
+  }
+  .hero .container img {
+    width: 100%;
+  }
+}
+.one .container {
+  flex-direction: column;
+}
+.one .container .cards {
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+.two .two_info {
+  width: 100%;
+  margin-bottom: 30px;
+}
+.two .dis_block {
+  flex-direction: column;
+}
+.two .dis_block .sec_img {
+  display: none;
+}
+
+.thr .container {
+  flex-direction: column;
+}
+.thr .firs_img {
+  width: 100% !important;
+}
+
+.four .pacman {
+  flex-direction: column !important;
+}
+
+.five .text {
+  width: 100%;
+}
+
+.six .dis_info {
+  flex-direction: column;
+}
+.six .kegeg {
+  flex-direction: column;
+}
+.six .kegeg .kage {
+  width: 90%;
 }/*# sourceMappingURL=main.css.map */
