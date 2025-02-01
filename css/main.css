@@ -211,7 +211,6 @@ header .hero .hero_info .btn:hover {
 .two .block .box:hover {
   background-color: #35736E;
   transform: scale(1.2);
-  padding: 0px 10px;
   color: white;
 }
 
@@ -401,4 +400,24 @@ footer .flex .last {
 }
 footer hr {
   margin: 35px 0px;
+}
+
+.bars {
+  display: none;
+}
+
+@media (max-width: 456px) {
+  .container {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+  header nav ul span {
+    display: none !important;
+  }
+  header nav .bars {
+    display: block;
+  }
+  .hero img {
+    display: none !important;
+  }
 }/*# sourceMappingURL=main.css.map */

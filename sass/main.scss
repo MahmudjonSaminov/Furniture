@@ -215,7 +215,6 @@ header{
             &:hover{
                 background-color: #35736E;
                 transform: scale(1.2);
-                padding: 0px 10px;
                 color: white;
             }
         }
@@ -422,4 +421,29 @@ footer{
    hr{
     margin: 35px 0px;
    }
+}
+.bars{
+    display: none;
+}
+
+@media (max-width: 456px){
+    .container{
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+    }
+    header{
+        nav{
+            ul span{
+                display: none !important;
+            }
+            .bars{
+                display: block;
+            }
+        }
+    }
+    .hero{
+        img{
+            display: none !important;
+        }
+    }
 }
